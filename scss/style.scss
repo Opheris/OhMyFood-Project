@@ -1,0 +1,420 @@
+﻿// Variables OHMYFOOD
+
+// Palette de couleurs
+$primary: #9356dc;
+$secondary: #ff79da;
+$tertiary: #99e2d0;
+$white: white;
+$black: black;
+$gray: #7a7a7a;
+$light-gray: #f6f6f6;
+$dark-gray: #353535;
+$location-bg: #eaeaea;
+$badge-green: #008766;
+
+// Polices
+$font-title: "Shrikhand", cursive;
+$font-text: "Roboto", sans-serif;
+
+// Espacements et rayons
+$radius: 15px;
+$btn-radius: 25px;
+$shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+$shadow-hover: 0 6px 20px rgba(0, 0, 0, 0.2);
+$container: 1200px;
+$restaurant-container: 980px;
+
+// Mixins
+@mixin button-gradient {
+  background: linear-gradient(135deg, $secondary, $primary);
+  color: white;
+  border: none;
+  border-radius: $btn-radius;
+  padding: 15px 20px;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: $shadow;
+  transition: all 0.3s;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-text;
+  color: $black;
+  line-height: 1.6;
+}
+
+// Header
+.header {
+  background: $white;
+  text-align: center;
+  padding: 20px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-family: $font-title;
+  font-size: 30px;
+  color: $black;
+  margin: 0;
+}
+
+// Localisation
+.location {
+  background: $location-bg;
+  @include flex-center;
+  padding: 15px 0;
+  gap: 15px;
+  color: $dark-gray;
+  font-weight: 500;
+
+  i {
+    font-size: 16px;
+  }
+}
+
+// Section hero
+.hero {
+  background: $light-gray;
+  text-align: center;
+  padding: 40px 20px;
+
+  h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: $black;
+  }
+
+  p {
+    font-size: 18px;
+    color: $gray;
+    margin-bottom: 30px;
+  }
+}
+
+.btn-explore {
+  @include button-gradient;
+  font-size: 16px;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: $shadow-hover;
+  }
+}
+
+// Fonctionnement
+.functioning {
+  padding: 50px 20px;
+  max-width: $container;
+  margin: 0 auto;
+
+  h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: $black;
+  }
+}
+
+.steps {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  background: $light-gray;
+  padding: 25px 20px;
+  border-radius: $radius;
+  box-shadow: $shadow;
+  position: relative;
+  padding-left: 45px;
+  flex: 1;
+  max-width: 350px;
+}
+
+.step-num {
+  background: $primary;
+  color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  @include flex-center;
+  font-size: 14px;
+  font-weight: 500;
+  position: absolute;
+  left: -12px;
+}
+
+.step i {
+  color: $gray;
+  font-size: 20px;
+  margin-right: 20px;
+  width: 20px;
+  text-align: center;
+}
+
+.step:hover i {
+  color: $primary;
+}
+
+.step span {
+  font-weight: 500;
+  color: $black;
+}
+
+// Restaurants
+.restaurants {
+  background: $light-gray;
+  padding: 50px 20px;
+
+  h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: $black;
+    max-width: $container;
+    margin: 0 auto 30px;
+  }
+}
+
+.restaurant-grid {
+  max-width: 980px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px;
+}
+
+.card {
+  background: $white;
+  border-radius: $radius;
+  box-shadow: $shadow;
+  overflow: hidden;
+  transition: transform 0.3s;
+  position: relative;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+.card-img {
+  position: relative;
+  height: 140px;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: $tertiary;
+  color: $badge-green;
+  padding: 7px 10px;
+  border-radius: 2px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.card-body {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-text {
+  h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: $black;
+    margin-bottom: 5px;
+  }
+
+  p {
+    font-size: 17px;
+    color: $gray;
+  }
+}
+
+// Animation coeurs
+.heart-input {
+  display: none;
+}
+
+.heart {
+  cursor: pointer;
+  font-size: 22px;
+  position: relative;
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+}
+
+.heart-outline {
+  color: $gray;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.heart-fill {
+  color: transparent;
+  background: linear-gradient(135deg, $secondary, $primary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+.heart-input:checked + .heart {
+  .heart-outline {
+    opacity: 0;
+  }
+
+  .heart-fill {
+    opacity: 1;
+    transform: scale(1);
+    animation: heartbeat 0.6s ease-in-out;
+  }
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+// Footer
+.footer {
+  background: $dark-gray;
+  color: $white;
+  padding: 25px 20px;
+}
+
+.footer-content {
+  max-width: $container;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.footer-logo {
+  font-family: $font-title;
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: $white;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: fit-content;
+}
+
+.footer-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: $white;
+  font-size: 16px;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  i {
+    width: 16px;
+    font-size: 14px;
+  }
+}
+
+// Responsive
+@media screen and (max-width: 768px) {
+  .restaurant-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .steps {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .step {
+    padding: 20px 15px;
+    padding-left: 40px;
+    max-width: none;
+  }
+
+  .hero h2 {
+    font-size: 22px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .footer-links {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .restaurants {
+    padding: 30px 15px;
+  }
+
+  .functioning {
+    padding: 30px 15px;
+  }
+
+  .hero {
+    padding: 30px 15px;
+  }
+
+  .header {
+    padding: 15px 0;
+  }
+
+  .logo {
+    font-size: 26px;
+  }
+}

@@ -1,0 +1,24 @@
+# Fichiers et dossiers à ignorer par Git
+
+# Fichiers temporaires
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+
+# Fichiers d'éditeurs
+.vscode/settings.json
+*.swp
+*.swo
+*~
+
+# Dossiers de cache
+.cache/
+node_modules/
+
+# Fichiers de sauvegarde
+*.bak
+*.backup
+
+# Fichiers de logs
+*.log
