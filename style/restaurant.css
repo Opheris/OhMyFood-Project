@@ -196,14 +196,24 @@ body {
 
 /* Éléments de menu */
 .menu-item {
-  background: #fff;
-  border-radius: 15px;
-  margin-bottom: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
   max-width: 70%;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+/* Cacher les inputs partout */
+.menu-item-input {
+  display: none;
+}
+
+/* Styles de base pour le label */
+.menu-item-label {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -211,8 +221,11 @@ body {
   transition: transform 0.3s ease;
 }
 
-.menu-item:hover {
-  transform: translateY(-2px);
+/* Desktop - comportement par défaut */
+@media screen and (min-width: 769px) {
+  .menu-item-label:hover {
+    transform: translateY(-2px);
+  }
 }
 
 .item-main {
@@ -253,21 +266,24 @@ body {
   transition: transform 0.4s ease;
 }
 
-/* Animation au survol */
-.menu-item:hover .item-main {
-  transform: translateX(-60px);
-}
+/* Animation au survol (desktop uniquement) */
+@media screen and (min-width: 769px) {
+  .menu-item:hover .item-main {
+    transform: translateX(-60px);
+  }
 
-.menu-item:hover .item-check {
-  transform: translateX(0);
-}
+  .menu-item:hover .item-check {
+    transform: translateX(0);
+  }
 
-.menu-item:hover .item-check i {
-  transform: rotate(0deg);
+  .menu-item:hover .item-check i {
+    transform: rotate(0deg);
+  }
 }
 
 .item-content {
   flex: 1;
+  min-width: 0; /* Permet la troncature */
 }
 
 .item-name {
@@ -408,6 +424,57 @@ body {
     width: 100%;
     max-width: 100%;
     margin-bottom: 12px;
+  }
+
+  /* Animation mobile au clic - quand l'input est coché */
+  .menu-item-input:checked + .menu-item-label {
+    overflow: hidden;
+  }
+
+  /* Le contenu principal reste statique mais se tronque */
+  .menu-item-input:checked + .menu-item-label .item-content {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: calc(100% - 120px); /* Espace réservé pour validation + prix */
+    position: relative;
+    z-index: 1;
+  }
+
+  .menu-item-input:checked + .menu-item-label .item-name,
+  .menu-item-input:checked + .menu-item-label .item-description {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 100%;
+  }
+
+  /* Le contenu principal ne bouge PAS */
+  .menu-item-input:checked + .menu-item-label .item-main {
+    transform: translateX(0);
+    transition: none;
+  }
+
+  /* Le prix glisse vers la gauche avec la validation */
+  .menu-item-input:checked + .menu-item-label .item-price {
+    transform: translateX(-60px);
+    transition: transform 0.4s ease;
+  }
+
+  /* La validation apparaît */
+  .menu-item-input:checked + .menu-item-label .item-check {
+    transform: translateX(0);
+    transition: transform 0.4s ease;
+  }
+
+  .menu-item-input:checked + .menu-item-label .item-check i {
+    transform: rotate(0deg);
+    transition: transform 0.4s ease;
+  }
+
+  /* Désactiver l'effet hover en mobile */
+  .menu-item-label:hover {
+    transform: none;
   }
 
   .item-main {

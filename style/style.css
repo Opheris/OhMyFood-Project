@@ -64,15 +64,23 @@ body {
 }
 
 .btn-explore {
-  background: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);
-  color: white;
+  background: linear-gradient(135deg, #ff99e0, #a066e6);
+  color: #fff;
   border: none;
   border-radius: 25px;
-  padding: 13px 18.75px;
+  padding: 16px 30px;
+  font-size: 16px;
   font-weight: 500;
   cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-  font-size: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  transition: all 0.54s ease;
+}
+
+.btn-explore:hover {
+  background: linear-gradient(135deg, #ffb3e6, #b399ff);
+  box-shadow: 0 0 16px rgba(255, 179, 230, 0.3),
+    0 0 22px rgba(179, 153, 255, 0.18), 0 4px 15px rgba(0, 0, 0, 0.15);
+  transform: translateY(-1px);
 }
 
 .functioning {

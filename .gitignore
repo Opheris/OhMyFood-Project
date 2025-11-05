@@ -22,3 +22,7 @@ node_modules/
 
 # Fichiers de logs
 *.log
+
+# Fichiers CSS générés depuis SCSS (optionnel)
+scss/*.css
+scss/*.css.map
