@@ -624,6 +624,18 @@ body {
 // ========== RESPONSIVE ==========
 
 @media screen and (max-width: 768px) {
+  // Localisation mobile
+  .location {
+    padding: 16px 0;
+    gap: 17px;
+    font-size: 16px;
+  }
+
+  // Hero mobile - ombre en haut
+  .hero {
+    box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.25);
+  }
+
   // Pages restaurants
   .restaurant-hero {
     height: 280px;
@@ -802,6 +814,6 @@ body {
   }
 
   .logo {
-    font-size: 26px;
+    font-size: 30px;
   }
 }
