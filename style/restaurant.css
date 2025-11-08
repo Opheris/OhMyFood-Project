@@ -638,8 +638,11 @@ body {
   }
   .footer-links {
     flex-direction: column;
-    gap: 7px;
+    gap: 0;
     align-items: flex-start;
+  }
+  .footer-spacer {
+    display: none;
   }
   .footer-logo {
     margin-left: 0;
@@ -675,16 +678,16 @@ body {
     gap: 15px;
   }
   .footer-logo {
-    font-size: 16px;
+    font-size: 18px;
   }
   .footer-link {
-    font-size: 14px;
+    font-size: 15px;
   }
   .restaurants {
     padding: 30px 15px;
   }
   .functioning {
-    padding: 30px 15px;
+    padding: 30px 30px;
   }
   .hero {
     padding: 30px 15px;

@@ -721,8 +721,12 @@ body {
 
   .footer-links {
     flex-direction: column;
-    gap: 7px;
+    gap: 0;
     align-items: flex-start;
+  }
+
+  .footer-spacer {
+    display: none;
   }
 
   .footer-logo {
@@ -769,11 +773,11 @@ body {
   }
 
   .footer-logo {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .footer-link {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   // Page d'accueil
@@ -782,7 +786,7 @@ body {
   }
 
   .functioning {
-    padding: 30px 15px;
+    padding: 30px 30px;
   }
 
   .hero {
