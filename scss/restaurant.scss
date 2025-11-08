@@ -50,7 +50,7 @@ $restaurant-container: 980px;
 
   &:hover {
     opacity: 0.9;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
   }
 }
 
@@ -165,6 +165,7 @@ body {
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 30px;
+    margin-left: 25px;
     color: $black;
   }
 }
@@ -426,7 +427,7 @@ body {
   max-width: 70%;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 24px;
+  margin-bottom: 17px;
 }
 
 .category-title {
@@ -490,7 +491,6 @@ body {
   align-items: flex-end;
   padding: 12px 15px;
   flex: 1;
-  transition: transform 0.4s ease;
 }
 
 .item-check {
@@ -750,16 +750,20 @@ body {
     max-width: none;
   }
 
+  .step i {
+    color: $gray;
+  }
+
+  .step .fa-store {
+    color: $primary;
+  }
+
   .hero h2 {
     font-size: 22px;
   }
 
   .hero p {
     font-size: 16px;
-  }
-
-  .footer-links {
-    margin-left: 0;
   }
 }
 
@@ -773,11 +777,11 @@ body {
   }
 
   .footer-logo {
-    font-size: 18px;
+    font-size: 19px;
   }
 
   .footer-link {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   // Page d'accueil
