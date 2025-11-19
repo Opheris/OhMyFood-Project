@@ -1,0 +1,160 @@
+// Styles généraux (body, header, footer...)
+body {
+  font-family: $font-text;
+  color: $black;
+  line-height: 1.6;
+  background-color: $white;
+  font-size: 14px;
+  opacity: 0;
+  animation: fadeInPage 0.8s ease-in forwards;
+}
+
+.header {
+  background: $white;
+  padding: 18px 0;
+  position: relative;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.header-nav {
+  padding: 0 23px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.back-btn {
+  position: absolute;
+  left: 23px;
+  color: $dark-gray;
+  font-size: 18px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $primary;
+  }
+}
+
+.logo {
+  font-family: $font-title;
+  font-size: 35px;
+  font-weight: 400;
+  color: #101010;
+  margin: 0;
+}
+
+.footer {
+  background: $dark-gray;
+  color: $white;
+  padding: 25px 20px;
+}
+
+.footer-content {
+  max-width: $container;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 1025px) {
+  .footer-content {
+    margin-right: 150px;
+  }
+}
+
+.footer-logo {
+  font-family: $font-title;
+  font-size: 18px;
+  font-weight: 400;
+  color: $white;
+  margin: 0;
+  margin-left: 0;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+
+.footer-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: $white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+
+  &:hover {
+    text-decoration: underline;
+    color: $tertiary;
+  }
+
+  i {
+    width: 16px;
+    font-size: 14px;
+  }
+}
+
+.footer-spacer {
+  height: 10px;
+}
+
+@media screen and (min-width: 1025px) {
+  .footer-links {
+    margin-left: 80px;
+  }
+}
+
+.loader {
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  animation: hideLoader 3s forwards;
+}
+
+.loader__circle {
+  width: 60px;
+  height: 60px;
+  border: 6px solid #9356dc;
+  border-top: 6px solid #ff79da;
+  border-radius: 50%;
+  animation: spinLoader 1s linear infinite;
+}
+
+@keyframes hideLoader {
+  to {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+@keyframes spinLoader {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeInPage {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
