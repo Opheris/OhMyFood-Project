@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -401,6 +402,24 @@ body {
   font-style: oblique 8deg;
 }
 
+@media screen and (max-width: 768px) {
+  .restaurant-header {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .restaurant-title {
+    font-family: "Shrikhand", cursive;
+    font-size: 68px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: -35px; /* Décalage plus important vers la gauche */
+    flex: none;
+  }
+  .heart-wrapper {
+    font-size: 400px;
+  }
+}
 .menu-section {
   max-width: 1200px;
   margin: 0 auto;
