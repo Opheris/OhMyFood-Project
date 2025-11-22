@@ -1,0 +1,14 @@
+Livrable - OhMyFood-Project
+
+Contenu :
+
+1) Repository GitHub : https://github.com/Opheris/OhMyFood-Project
+2) Site en ligne : https://opheris.github.io/OhMyFood-Project/
+
+Fichier généré automatiquement par l'assistant le 2025-11-22 01:38:37 UTC.
+
+Instructions pour obtenir un PDF :
+- Ouvrir ce fichier sur GitHub, cliquer sur "Raw", puis faire Fichier -> Imprimer -> Enregistrer en PDF.
+- Ou télécharger le fichier et l'ouvrir avec un éditeur (Bloc-notes / TextEdit) puis imprimer en PDF.
+
+Merci.
