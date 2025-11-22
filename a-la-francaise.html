@@ -17,8 +17,8 @@
   <body>
     <header class="header">
       <div class="header-nav">
-        <a href="index.html" class="back-btn">
-          <i class="fas fa-arrow-left"></i>
+        <a href="index.html" class="back-btn" aria-label="Retour">
+          <i class="fas fa-arrow-left" aria-hidden="true"></i>
         </a>
         <h1 class="logo">ohmyfood</h1>
       </div>
@@ -26,7 +26,7 @@
 
     <div class="restaurant-hero">
       <img
-        src="images/third picture.jpg"
+        src="images/third%20picture.jpg"
         alt="À la française"
         class="hero-image"
       />
@@ -38,8 +38,8 @@
         <div class="heart-container">
           <input type="checkbox" class="heart-input" id="restaurant-heart" />
           <label for="restaurant-heart" class="heart">
-            <i class="far fa-heart heart-outline"></i>
-            <i class="fas fa-heart heart-fill"></i>
+            <i class="far fa-heart heart-outline" aria-hidden="true"></i>
+            <i class="fas fa-heart heart-fill" aria-hidden="true"></i>
           </label>
         </div>
       </div>
@@ -54,48 +54,56 @@
           <div class="menu-item">
             <input type="checkbox" class="menu-item-input" id="menu-item-1" />
             <label for="menu-item-1" class="menu-item-label">
-              <div class="item-main">
-                <div class="item-content">
-                  <h3 class="item-name">Tartare de poulpe acidulé</h3>
-                  <p class="item-description">Aux zestes d'orange</p>
-                </div>
-                <div class="item-price">25€</div>
-              </div>
-              <div class="item-check">
-                <i class="fas fa-check"></i>
-              </div>
+              <span class="item-main">
+                <span class="item-content">
+                  <span class="item-name" role="heading" aria-level="3"
+                    >Tartare de poulpe acidulé</span
+                  ><br />
+                  <span class="item-description">Aux zestes d'orange</span>
+                </span>
+                <span class="item-price">25€</span>
+              </span>
+              <span class="item-check" aria-hidden="true">
+                <i class="fas fa-check" aria-hidden="true"></i>
+              </span>
             </label>
           </div>
 
           <div class="menu-item">
             <input type="checkbox" class="menu-item-input" id="menu-item-2" />
             <label for="menu-item-2" class="menu-item-label">
-              <div class="item-main">
-                <div class="item-content">
-                  <h3 class="item-name">Velouté de légumes d'antan</h3>
-                  <p class="item-description">Carotte, panais, topinambour</p>
-                </div>
-                <div class="item-price">35€</div>
-              </div>
-              <div class="item-check">
-                <i class="fas fa-check"></i>
-              </div>
+              <span class="item-main">
+                <span class="item-content">
+                  <span class="item-name" role="heading" aria-level="3"
+                    >Velouté de légumes d'antan</span
+                  ><br />
+                  <span class="item-description"
+                    >Carotte, panais, topinambour</span
+                  >
+                </span>
+                <span class="item-price">35€</span>
+              </span>
+              <span class="item-check" aria-hidden="true">
+                <i class="fas fa-check" aria-hidden="true"></i>
+              </span>
             </label>
           </div>
 
           <div class="menu-item">
             <input type="checkbox" class="menu-item-input" id="menu-item-3" />
             <label for="menu-item-3" class="menu-item-label">
-              <div class="item-main">
-                <div class="item-content">
-                  <h3 class="item-name">Soupe à l'oignon</h3>
-                  <p class="item-description">Revisitée</p>
-                </div>
-                <div class="item-price">20€</div>
-              </div>
-              <div class="item-check">
-                <i class="fas fa-check"></i>
-              </div>
+              <span class="item-main">
+                <span class="item-content">
+                  <span class="item-name" role="heading" aria-level="3"
+                    >Soupe à l'oignon</span
+                  ><br />
+                  <span class="item-description">Revisitée</span>
+                </span>
+                <span class="item-price">20€</span>
+              </span>
+              <span class="item-check" aria-hidden="true">
+                <i class="fas fa-check" aria-hidden="true"></i>
+              </span>
             </label>
           </div>
         </div>
@@ -109,54 +117,60 @@
           <div class="menu-item">
             <input type="checkbox" class="menu-item-input" id="menu-item-4" />
             <label for="menu-item-4" class="menu-item-label">
-              <div class="item-main">
-                <div class="item-content">
-                  <h3 class="item-name">Coquilles Saint-Jacques</h3>
-                  <p class="item-description">
-                    Accompagnées d'une purée de panais
-                  </p>
-                </div>
-                <div class="item-price">40€</div>
-              </div>
-              <div class="item-check">
-                <i class="fas fa-check"></i>
-              </div>
+              <span class="item-main">
+                <span class="item-content">
+                  <span class="item-name" role="heading" aria-level="3"
+                    >Coquilles Saint-Jacques</span
+                  ><br />
+                  <span class="item-description"
+                    >Accompagnées d'une purée de panais</span
+                  >
+                </span>
+                <span class="item-price">40€</span>
+              </span>
+              <span class="item-check" aria-hidden="true">
+                <i class="fas fa-check" aria-hidden="true"></i>
+              </span>
             </label>
           </div>
 
           <div class="menu-item">
             <input type="checkbox" class="menu-item-input" id="menu-item-5" />
             <label for="menu-item-5" class="menu-item-label">
-              <div class="item-main">
-                <div class="item-content">
-                  <h3 class="item-name">Magret de canard</h3>
-                  <p class="item-description">
-                    Et parmentier de pommes de terre
-                  </p>
-                </div>
-                <div class="item-price">35€</div>
-              </div>
-              <div class="item-check">
-                <i class="fas fa-check"></i>
-              </div>
+              <span class="item-main">
+                <span class="item-content">
+                  <span class="item-name" role="heading" aria-level="3"
+                    >Magret de canard</span
+                  ><br />
+                  <span class="item-description"
+                    >Et parmentier de pommes de terre</span
+                  >
+                </span>
+                <span class="item-price">35€</span>
+              </span>
+              <span class="item-check" aria-hidden="true">
+                <i class="fas fa-check" aria-hidden="true"></i>
+              </span>
             </label>
           </div>
 
           <div class="menu-item">
             <input type="checkbox" class="menu-item-input" id="menu-item-6" />
             <label for="menu-item-6" class="menu-item-label">
-              <div class="item-main">
-                <div class="item-content">
-                  <h3 class="item-name">Pigeonneau d'Ille-et-Vilaine</h3>
-                  <p class="item-description">
-                    Sur son lit de gnocchis aux légumes
-                  </p>
-                </div>
-                <div class="item-price">44€</div>
-              </div>
-              <div class="item-check">
-                <i class="fas fa-check"></i>
-              </div>
+              <span class="item-main">
+                <span class="item-content">
+                  <span class="item-name" role="heading" aria-level="3"
+                    >Pigeonneau d'Ille-et-Vilaine</span
+                  ><br />
+                  <span class="item-description"
+                    >Sur son lit de gnocchis aux légumes</span
+                  >
+                </span>
+                <span class="item-price">44€</span>
+              </span>
+              <span class="item-check" aria-hidden="true">
+                <i class="fas fa-check" aria-hidden="true"></i>
+              </span>
             </label>
           </div>
         </div>
@@ -170,55 +184,63 @@
           <div class="menu-item">
             <input type="checkbox" class="menu-item-input" id="menu-item-7" />
             <label for="menu-item-7" class="menu-item-label">
-              <div class="item-main">
-                <div class="item-content">
-                  <h3 class="item-name">Pétales de violettes glacés</h3>
-                  <p class="item-description">Et purée de noisettes</p>
-                </div>
-                <div class="item-price">18€</div>
-              </div>
-              <div class="item-check">
-                <i class="fas fa-check"></i>
-              </div>
+              <span class="item-main">
+                <span class="item-content">
+                  <span class="item-name" role="heading" aria-level="3"
+                    >Pétales de violettes glacés</span
+                  ><br />
+                  <span class="item-description">Et purée de noisettes</span>
+                </span>
+                <span class="item-price">18€</span>
+              </span>
+              <span class="item-check" aria-hidden="true">
+                <i class="fas fa-check" aria-hidden="true"></i>
+              </span>
             </label>
           </div>
 
           <div class="menu-item">
             <input type="checkbox" class="menu-item-input" id="menu-item-8" />
             <label for="menu-item-8" class="menu-item-label">
-              <div class="item-main">
-                <div class="item-content">
-                  <h3 class="item-name">Fondant au chocolat</h3>
-                  <p class="item-description">Revisité</p>
-                </div>
-                <div class="item-price">22€</div>
-              </div>
-              <div class="item-check">
-                <i class="fas fa-check"></i>
-              </div>
+              <span class="item-main">
+                <span class="item-content">
+                  <span class="item-name" role="heading" aria-level="3"
+                    >Fondant au chocolat</span
+                  ><br />
+                  <span class="item-description">Revisité</span>
+                </span>
+                <span class="item-price">22€</span>
+              </span>
+              <span class="item-check" aria-hidden="true">
+                <i class="fas fa-check" aria-hidden="true"></i>
+              </span>
             </label>
           </div>
 
           <div class="menu-item">
             <input type="checkbox" class="menu-item-input" id="menu-item-9" />
             <label for="menu-item-9" class="menu-item-label">
-              <div class="item-main">
-                <div class="item-content">
-                  <h3 class="item-name">Millefeuille croustillant</h3>
-                  <p class="item-description">Myrtilles et pâte d'amande</p>
-                </div>
-                <div class="item-price">23€</div>
-              </div>
-              <div class="item-check">
-                <i class="fas fa-check"></i>
-              </div>
+              <span class="item-main">
+                <span class="item-content">
+                  <span class="item-name" role="heading" aria-level="3"
+                    >Millefeuille croustillant</span
+                  ><br />
+                  <span class="item-description"
+                    >Myrtilles et pâte d'amande</span
+                  >
+                </span>
+                <span class="item-price">23€</span>
+              </span>
+              <span class="item-check" aria-hidden="true">
+                <i class="fas fa-check" aria-hidden="true"></i>
+              </span>
             </label>
           </div>
         </div>
       </section>
 
       <div class="order-section">
-        <button class="btn-order">Commander</button>
+        <button class="btn-order" type="button">Commander</button>
       </div>
     </main>
 
@@ -226,11 +248,11 @@
       <div class="footer-content">
         <div class="footer-links">
           <div class="footer-link">
-            <i class="fas fa-utensils"></i>
+            <i class="fas fa-utensils" aria-hidden="true"></i>
             <span>Proposer un restaurant</span>
           </div>
           <div class="footer-link">
-            <i class="fas fa-handshake"></i>
+            <i class="fas fa-handshake" aria-hidden="true"></i>
             <span>Devenir partenaire</span>
           </div>
           <div class="footer-spacer"></div>

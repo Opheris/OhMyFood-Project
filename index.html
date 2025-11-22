@@ -14,9 +14,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
   </head>
-  <div class="text-fade-in"></div>
   <body>
-    <!-- Loader SCSS pur -->
+    <div class="text-fade-in"></div>
+
     <div class="loader">
       <div class="loader__circle"></div>
     </div>
@@ -25,10 +25,10 @@
       <h1 class="logo">ohmyfood</h1>
     </header>
 
-    <section class="location">
-      <i class="fas fa-map-marker-alt"></i>
+    <div class="location">
+      <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
       <span>Paris, Belleville</span>
-    </section>
+    </div>
 
     <section class="hero">
       <h2>
@@ -44,17 +44,17 @@
       <div class="steps">
         <div class="step">
           <span class="step-num">1</span>
-          <i class="fas fa-mobile-alt"></i>
+          <i class="fas fa-mobile-alt" aria-hidden="true"></i>
           <span>Choisissez un restaurant</span>
         </div>
         <div class="step">
           <span class="step-num">2</span>
-          <i class="fas fa-list-ul"></i>
+          <i class="fas fa-list-ul" aria-hidden="true"></i>
           <span>Composez votre menu</span>
         </div>
         <div class="step">
           <span class="step-num">3</span>
-          <i class="fas fa-store"></i>
+          <i class="fas fa-store" aria-hidden="true"></i>
           <span>Dégustez au restaurant</span>
         </div>
       </div>
@@ -66,7 +66,7 @@
         <div class="card">
           <a href="la-palette-du-gout.html" class="card-link">
             <div class="card-img">
-              <img src="images/first picture.jpg" alt="La palette du goût" />
+              <img src="images/first-picture.jpg" alt="La palette du goût" />
               <span class="badge">Nouveau</span>
             </div>
             <div class="card-body">
@@ -74,21 +74,21 @@
                 <h3>La palette du goût</h3>
                 <p>Ménilmontant</p>
               </div>
-              <div class="heart-wrapper">
-                <input type="checkbox" class="heart-input" id="heart1" />
-                <label for="heart1" class="heart">
-                  <i class="far fa-heart heart-outline"></i>
-                  <i class="fas fa-heart heart-fill"></i>
-                </label>
-              </div>
             </div>
           </a>
+          <div class="heart-wrapper">
+            <input type="checkbox" class="heart-input" id="heart1" />
+            <label for="heart1" class="heart">
+              <i class="far fa-heart heart-outline" aria-hidden="true"></i>
+              <i class="fas fa-heart heart-fill" aria-hidden="true"></i>
+            </label>
+          </div>
         </div>
 
         <div class="card">
           <a href="la-note-enchantee.html" class="card-link">
             <div class="card-img">
-              <img src="images/second picture.jpg" alt="La note enchantée" />
+              <img src="images/second-picture.jpg" alt="La note enchantée" />
               <span class="badge">Nouveau</span>
             </div>
             <div class="card-body">
@@ -96,70 +96,70 @@
                 <h3>La note enchantée</h3>
                 <p>Charonne</p>
               </div>
-              <div class="heart-wrapper">
-                <input type="checkbox" class="heart-input" id="heart2" />
-                <label for="heart2" class="heart">
-                  <i class="far fa-heart heart-outline"></i>
-                  <i class="fas fa-heart heart-fill"></i>
-                </label>
-              </div>
             </div>
           </a>
+          <div class="heart-wrapper">
+            <input type="checkbox" class="heart-input" id="heart2" />
+            <label for="heart2" class="heart">
+              <i class="far fa-heart heart-outline" aria-hidden="true"></i>
+              <i class="fas fa-heart heart-fill" aria-hidden="true"></i>
+            </label>
+          </div>
         </div>
 
         <div class="card">
           <a href="a-la-francaise.html" class="card-link">
             <div class="card-img">
-              <img src="images/third picture.jpg" alt="À la française" />
+              <img src="images/third-picture.jpg" alt="À la française" />
             </div>
             <div class="card-body">
               <div class="card-text">
                 <h3>À la française</h3>
                 <p>Cité Rouge</p>
               </div>
-              <div class="heart-wrapper">
-                <input type="checkbox" class="heart-input" id="heart3" />
-                <label for="heart3" class="heart">
-                  <i class="far fa-heart heart-outline"></i>
-                  <i class="fas fa-heart heart-fill"></i>
-                </label>
-              </div>
             </div>
           </a>
+          <div class="heart-wrapper">
+            <input type="checkbox" class="heart-input" id="heart3" />
+            <label for="heart3" class="heart">
+              <i class="far fa-heart heart-outline" aria-hidden="true"></i>
+              <i class="fas fa-heart heart-fill" aria-hidden="true"></i>
+            </label>
+          </div>
         </div>
 
         <div class="card">
           <a href="le-delice-des-sens.html" class="card-link">
             <div class="card-img">
-              <img src="images/fourth picture.jpg" alt="Le délice des sens" />
+              <img src="images/fourth-picture.jpg" alt="Le délice des sens" />
             </div>
             <div class="card-body">
               <div class="card-text">
                 <h3>Le délice des sens</h3>
                 <p>Folie-Méricourt</p>
               </div>
-              <div class="heart-wrapper">
-                <input type="checkbox" class="heart-input" id="heart4" />
-                <label for="heart4" class="heart">
-                  <i class="far fa-heart heart-outline"></i>
-                  <i class="fas fa-heart heart-fill"></i>
-                </label>
-              </div>
             </div>
           </a>
-          <div class="heart-wrapper"></div>
+          <div class="heart-wrapper">
+            <input type="checkbox" class="heart-input" id="heart4" />
+            <label for="heart4" class="heart">
+              <i class="far fa-heart heart-outline" aria-hidden="true"></i>
+              <i class="fas fa-heart heart-fill" aria-hidden="true"></i>
+            </label>
+          </div>
         </div>
       </div>
     </section>
+
     <footer class="footer">
       <div class="footer-content">
         <div class="footer-links">
           <div class="footer-link">
-            <i class="fas fa-utensils"></i>
+            <i class="fas fa-utensils" aria-hidden="true"></i>
             <span>Proposer un restaurant</span>
           </div>
           <div class="footer-link">
-            <i class="fas fa-handshake"></i>
+            <i class="fas fa-handshake" aria-hidden="true"></i>
             <span>Devenir partenaire</span>
           </div>
           <div class="footer-spacer"></div>
