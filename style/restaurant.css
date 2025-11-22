@@ -1,8 +1,10 @@
 @charset "UTF-8";
 
 :root {
-  --fa-transform: none; /* valeur par défaut sûre */
-  --fa-animation-delay: 0s; /* bonne habitude : unité incluse */
+  /* valeurs par défaut sûres avec unités */
+  --fa-animation-delay: 0s;
+  --fa-rotate-angle: 0deg;
+  --fa-transform: none;
 }
 
 .fa-beat,
@@ -15,9 +17,8 @@
   animation-delay: var(--fa-animation-delay, 0s);
 }
 
-/* permet d'utiliser --fa-transform: rotate(30deg) ou none */
 .fa-rotate-by {
-  transform: var(--fa-transform, none);
+  transform: rotate(var(--fa-rotate-angle, 0deg));
 }
 
 * {
